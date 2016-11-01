@@ -2,7 +2,7 @@
 <html lang="en-us">
   <head>
     <meta charset="UTF-8">
-    <title>Firo by GRCTC</title>
+    <title>FIRO by GRCTC</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
@@ -11,7 +11,7 @@
   </head>
   <body>
     <section class="page-header">
-      <h1 class="project-name">Firo</h1>
+      <h1 class="project-name">FIRO</h1>
       <h2 class="project-tagline">Financial Industry Regulatory Ontology</h2>
       <a href="https://github.com/GRCTC/FIRO" class="btn">View on GitHub</a>
       <a href="https://github.com/GRCTC/FIRO/zipball/master" class="btn">Download .zip</a>
@@ -20,13 +20,42 @@
 
     <section class="main-content">
       <h2>
-<a id="introduction" class="anchor" href="#introduction" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Introduction.</h2>
+<a id="introduction" class="anchor" href="#introduction" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Introduction</h2>
+
+<h3>
+<a id="firo-as-a-standard" class="anchor" href="#firo-as-a-standard" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>FIRO as a Standard</h3>
+
+<p>The Financial Industry Regulatory Ontology (FIRO) is a family of ontologies that enable efficient access to the wide and complex spectrum of regulations through formal semantics.  As the semantic expression of the regulations governing financial services has not been the subject of comprehensive scientific investigation, this element of the GRC research initiative is essentially highly innovative. The financial services regulatory domain is being modelled in FIRO through an innovative approach that includes the semantic analysis of legal texts and rules by legal and financial subject matter experts (SMEs), their translation into a structured natural language, and the mapping of this regulatory natural language and rules this into machine language by ontology engineers.  Regulatory ontology development is a non-trivial and challenging task.  It is, in particular, a much more complex undertaking than developing ontologies for other domains, such as the Life Sciences’ biomedicine ontology. Part of this complexity stems from the fact that regulators define their policies independently of each other using different semantics for legal and business terms.</p>
+
+<p>Thus, a regulatory ontology such as FIRO can help:</p>
+
+<ul>
+<li>Financial services companies to monitor, assess, and apply a multitude of regulations within and across regulatory domains to business processes and data;</li>
+<li>Model the regulations to help simplify their consumption;</li>
+<li>Make it simpler for enterprises to map GRC policies onto regulations and perform Regulatory Change Management;</li>
+<li>Help organisations keep abreast of the ramifications of complex interacting regulatory rules and policies;</li>
+<li>Reason over regulations to identify risks and compliance issues;</li>
+<li>Contribute to the emergence of SMART Regulation.</li>
+</ul>
+
+<p>In order to achieve the multiple use scenarios, we propose FIRO in two layers—conceptual and operational. This follows the EDM Council’s schema for FIBO.</p>
+
+<h3>
+<a id="firo-in-grctc" class="anchor" href="#firo-in-grctc" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>FIRO in GRCTC</h3>
 
 <p>The Financial Industry Regulatory Ontology (FIRO) was developed by the Governance, Risk and Compliance Technology Centre to support the knowledge extraction and enhance the knowledge base for its research projects focused on knowledge management systems for regulatory compliance in the financial industry.</p>
 
 <p>FIRO is a series of interlinked Ontologies based on industry standards to capture regulatory imperatives and rules in formal semantics. It will enable efficient access to, and smarter consumption of, the wide and complex spectrum of financial services industry regulations.</p>
 
-<p>It also expresses the abstract model followed by the other GRCTC projects: The parser (Hermes) The Methodology (RIM) The XML Schema (Mercury) The Tool (Ganesha) FiORO</p>
+<p>It also expresses the abstract model followed by the other GRCTC projects: </p>
+
+<ul>
+<li>The parser (Hermes) </li>
+<li>The Methodology (RIM) </li>
+<li>The XML Schema (Mercury) </li>
+<li>The Tool (Ganesha) </li>
+<li>The Risk Management ontology (FiORO)</li>
+</ul>
 
 <h2>
 <a id="components" class="anchor" href="#components" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Components</h2>
@@ -44,12 +73,22 @@
 <h3>
 <a id="firo-domain" class="anchor" href="#firo-domain" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>FIRO-D(omain)</h3>
 
-<p>FIRO-Domain (FIRO-D) identifies the domain ontologies based on FIRO-H. Each contains one rulebook and the related vocabulary. This means that different rulebooks result in different instances of FIRO-Domain, and any common rule (or vocabulary entry) will be present in all relevant instances. Its possible applications include:  Extract the rules valid for a particular point in time (exploiting RCM of FIRO-S).  Classify instances of RegulatoryStatements as exceptions to other RegulatoryStatements.  Classify BusinessRules as ensuring compliance with LegalRules</p>
+<p>FIRO-Domain (FIRO-D) identifies the domain ontologies based on FIRO-H. Each contains one rulebook and the related vocabulary. This means that different rulebooks result in different instances of FIRO-Domain, and any common rule (or vocabulary entry) will be present in all relevant instances. Its possible applications include: </p>
+
+<ul>
+<li>Extract the rules valid for a particular point in time (exploiting RCM of FIRO-S);</li>
+<li>Classify instances of RegulatoryStatements as exceptions to other RegulatoryStatements; </li>
+<li>Classify BusinessRules as ensuring compliance with LegalRules.</li>
+</ul>
 
 <h3>
 <a id="firo-purposespecific" class="anchor" href="#firo-purposespecific" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>FIRO-P(urpose)S(pecific)</h3>
 
-<p>FIRO-PurposeSpecific (FIRO-PS) is the ontology used for performing reasoning towards a specific application. It is a specialization of one or more FIRO-Ds. It may contain Factor instances to represent (either real or fictional) data. Its possible applications include:  Classify Events (instances of Actions) on the basis of their relation to RegulatoryStatements, as either “relevant”, “complying”, “allowed”, “breaching”, “exempted”.</p>
+<p>FIRO-PurposeSpecific (FIRO-PS) is the ontology used for performing reasoning towards a specific application. It is a specialization of one or more FIRO-Ds. It may contain Factor instances to represent (either real or fictional) data. Its possible applications include: </p>
+
+<ul>
+<li>Classify Events (instances of Actions) on the basis of their relation to RegulatoryStatements, as either “relevant”, “complying”, “allowed”, “breaching”, “exempted”.</li>
+</ul>
 
 <h2>
 <a id="contacts" class="anchor" href="#contacts" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Contacts</h2>
@@ -57,7 +96,7 @@
 <p>FIRO is being developed at <a href="https://github.com/grctc" class="user-mention">@grctc</a> (<a href="http://www.grctc.com">www.grctc.com</a>) by Dr. Marcello Ceci (<a href="https://github.com/Marceci" class="user-mention">@Marceci</a>).</p>
 
       <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/GRCTC/FIRO">Firo</a> is maintained by <a href="https://github.com/GRCTC">GRCTC</a>.</span>
+        <span class="site-footer-owner"><a href="https://github.com/GRCTC/FIRO">FIRO</a> is maintained by <a href="https://github.com/GRCTC">GRCTC</a>.</span>
 
         <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
       </footer>
