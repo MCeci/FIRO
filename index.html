@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Firo by GRCTC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Firo</h1>
+      <h2 class="project-tagline">Financial Industry Regulatory Ontology</h2>
+      <a href="https://github.com/GRCTC/FIRO" class="btn">View on GitHub</a>
+      <a href="https://github.com/GRCTC/FIRO/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/GRCTC/FIRO/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h2>
+<a id="introduction" class="anchor" href="#introduction" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Introduction.</h2>
+
+<p>The Financial Industry Regulatory Ontology (FIRO) was developed by the Governance, Risk and Compliance Technology Centre to support the knowledge extraction and enhance the knowledge base for its research projects focused on knowledge management systems for regulatory compliance in the financial industry.</p>
+
+<p>FIRO is a series of interlinked Ontologies based on industry standards to capture regulatory imperatives and rules in formal semantics. It will enable efficient access to, and smarter consumption of, the wide and complex spectrum of financial services industry regulations.</p>
+
+<p>It also expresses the abstract model followed by the other GRCTC projects: The parser (Hermes) The Methodology (RIM) The XML Schema (Mercury) The Tool (Ganesha) FiORO</p>
+
+<h2>
+<a id="components" class="anchor" href="#components" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Components</h2>
+
+<h3>
+<a id="firo-highlevel" class="anchor" href="#firo-highlevel" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>FIRO-H(ighLevel)</h3>
+
+<p>FIRO-HighLevel (FIRO-H) is a core legal ontology about regulatory compliance. It is centred around the concept of Requirement (Rule Statement) and the concept of Action, and defined in OWL.</p>
+
+<h3>
+<a id="firo-structure" class="anchor" href="#firo-structure" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>FIRO-S(tructure)</h3>
+
+<p>FIRO-Structure (FIRO-S) deals with the structure and the semantics of the source document. It accounts for legal and non-legal documents alike. The purpose of FIRO-S is to integrate information from the source text part of Mercury to allow querying, Regulatory Change Management, and reasoning. FIRO-S relies on LegalDocML for the representation of the structure and the semantics of the legal document. FIRO-S is not formalized in OWL.</p>
+
+<h3>
+<a id="firo-domain" class="anchor" href="#firo-domain" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>FIRO-D(omain)</h3>
+
+<p>FIRO-Domain (FIRO-D) identifies the domain ontologies based on FIRO-H. Each contains one rulebook and the related vocabulary. This means that different rulebooks result in different instances of FIRO-Domain, and any common rule (or vocabulary entry) will be present in all relevant instances. Its possible applications include:  Extract the rules valid for a particular point in time (exploiting RCM of FIRO-S).  Classify instances of RegulatoryStatements as exceptions to other RegulatoryStatements.  Classify BusinessRules as ensuring compliance with LegalRules</p>
+
+<h3>
+<a id="firo-purposespecific" class="anchor" href="#firo-purposespecific" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>FIRO-P(urpose)S(pecific)</h3>
+
+<p>FIRO-PurposeSpecific (FIRO-PS) is the ontology used for performing reasoning towards a specific application. It is a specialization of one or more FIRO-Ds. It may contain Factor instances to represent (either real or fictional) data. Its possible applications include:  Classify Events (instances of Actions) on the basis of their relation to RegulatoryStatements, as either “relevant”, “complying”, “allowed”, “breaching”, “exempted”.</p>
+
+<h2>
+<a id="contacts" class="anchor" href="#contacts" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Contacts</h2>
+
+<p>FIRO is being developed at <a href="https://github.com/grctc" class="user-mention">@grctc</a> (<a href="http://www.grctc.com">www.grctc.com</a>) by Dr. Marcello Ceci (<a href="https://github.com/Marceci" class="user-mention">@Marceci</a>).</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/GRCTC/FIRO">Firo</a> is maintained by <a href="https://github.com/GRCTC">GRCTC</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
